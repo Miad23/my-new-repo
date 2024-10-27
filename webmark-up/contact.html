@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Amsterdam Public Transport Guide</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css" type="text/css">
+</head>
+<body>
+
+<header>
+    <h1>Amsterdam Public Transport Guide</h1>
+    <a href="index.html" class="logo" aria-label="Amsterdam Public Transport Home">
+        <img src="image/logo.jpg" alt="Amsterdam Public Transport Logo">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="routes.html">Routes To Major Tourist Attractions</a></li>
+            <li><a href="tickets.html">Tickets & Fares</a></li>
+            <li><a href="travel tips.html">Travel Tips & Resources</a></li>
+            <li><a href="accessibility.html">Accessibility Information</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="contact-section">
+        <article class="contact-info">
+            <h3>Contact Us</h3>
+            <p>We'd love to hear from you! Whether you have a question, feedback, or a specific request, feel free to reach out to us by filling out the form below.</p>
+        </article>
+        
+        <form class="contact-form" action="#" method="post">
+            <fieldset>
+                <legend>Contact Form:</legend>
+                
+                <label for="title">Title:</label>
+                <label><input type="radio" name="title" value="Mr." id="title-mr"> Mr.</label>
+                <label><input type="radio" name="title" value="Mrs." id="title-mrs"> Mrs.</label>
+                <label><input type="radio" name="title" value="Ms." id="title-ms"> Ms.</label>
+
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+
+                <label for="message">Your Question/Request:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button id="submit"type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 Amsterdam Public Transport Guide. All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
